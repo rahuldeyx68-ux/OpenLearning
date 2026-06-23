@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://www.desmos.com/api/v1.12/calculator.js?apiKey=c103112daac14089aa6010c07435f2b8"></script>
+  
+</head>
+<body>
+     <!-- Step 2: Graph Container -->
+  <div id="calculator" style="width: 1000px; height: 600px;"></div>
+
+  <!-- Step 3: Initialize Graph -->
+  <script>
+    const elt = document.getElementById('calculator');
+
+    const calculator = Desmos.Geometry(elt);
+
+    // Add a graph equation
+    calculator.setExpression({
+      id: 'graph1',
+      latex: 'y = x^2'
+    });
+  </script>
+</body>
+</html>
