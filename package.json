@@ -1,0 +1,26 @@
+{
+  "name": "openlearning",
+  "version": "1.0.0",
+  "description": "This is a open source platform for students where they can learn math's physics and chemistry using visuals.\r 1.User can Learn using graph and ai",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rahuldeyx68-ux/OpenLearning.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/rahuldeyx68-ux/OpenLearning/issues"
+  },
+  "homepage": "https://github.com/rahuldeyx68-ux/OpenLearning#readme",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "nodemailer": "^9.0.1"
+  }
+}
