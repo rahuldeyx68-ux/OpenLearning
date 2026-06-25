@@ -23,11 +23,27 @@ OpenLearning is a Flask-based web project that provides an educational math expe
    - `DESMOS_API_KEY`
 3. Start the Flask server:
    ```bash
-   python api.py
+    python api.py
    ```
 4. Open the browser at:
    ```
    http://127.0.0.1:5000/
+   ```
+
+### Running on Windows / Production
+
+- For quick local testing on Windows use:
+   ```bash
+   python app.py
+   ```
+- For a production-like server on Windows install `waitress` and run:
+   ```bash
+   pip install -r requirements.txt
+   waitress-serve --listen=0.0.0.0:5000 app:app
+   ```
+- On Linux/macOS prefer Gunicorn:
+   ```bash
+   gunicorn app:app --bind 0.0.0.0:5000
    ```
 
 ## Important Routes
