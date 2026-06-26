@@ -1,3 +1,6 @@
 .env
 nvidia_api.py
 ai_chat.html
+rest.py
+request.js
+wikirest.htm
