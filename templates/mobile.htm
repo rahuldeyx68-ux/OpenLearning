@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Responsive Calculator</title>
+    <script src="https://www.desmos.com/api/v1.12/calculator.js?apiKey=c103112daac14089aa6010c07435f2b8"></script>
+    <style>
+        /* Reset margins to prevent unwanted scrollbars on mobile */
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #f4f4f9;
+        }
+
+        /* The container now takes up the full width of the screen */
+        #calculator {
+            width: 100%;
+            height: 100vh; /* 100% of the viewport height */
+            /* Optional: If you don't want it full-screen, change height to 400px and add max-width */
+            /* max-width: 800px; */
+            /* margin: 0 auto; */
+        }
+    </style>
+</head>
+<body>
+    <div id="calculator"></div>
+
+    <script>
+        var elt = document.getElementById('calculator');
+        // Initialize the calculator
+        var calculator = Desmos.GraphingCalculator(elt);
+    </script>
+</body>
+</html>
